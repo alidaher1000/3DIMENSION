@@ -740,8 +740,7 @@ public final class MainActivity extends AppCompatActivity {
         if (defaultAdapter != null) {
             if (defaultAdapter.isEnabled()) {
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
+                                //    ActivityCompat#requestPermissions
                     requestPermissions(new String[]{"android.permission.BLUETOOTH", "android.permission.BLUETOOTH_ADMIN", "android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION"}, 200);
 
                     // here to request the missing permissions, and then overriding
